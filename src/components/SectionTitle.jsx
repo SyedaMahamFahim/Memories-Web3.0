@@ -10,7 +10,7 @@ const SectionTitle = () => {
       mt={10}
     >
       <Heading as="h2" size="lg" mb={4}>
-        Create your ever lasting memories
+        Add your best or worst memory
       </Heading>
       <Text>
         All the memories you have will be stored in blockchain. You can only
