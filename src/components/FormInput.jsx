@@ -1,13 +1,10 @@
 import React from "react";
 import {
   Box,
-  Text,
-  Heading,
   FormControl,
   FormLabel,
   FormErrorMessage,
   Textarea,
-  FormHelperText,
   Input,
 } from "@chakra-ui/react";
 const FormInput = ({ label, type, name, onChange, error, register, tag }) => {

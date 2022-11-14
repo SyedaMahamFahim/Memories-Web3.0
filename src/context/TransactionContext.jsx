@@ -67,7 +67,6 @@ export const TransactionsProvider = ({ children }) => {
 
   // Send transaction
   const sendTransaction = async (data) => {
-    console.log("This is form data from context", data);
 
     try {
       setTransactionLoading(true);
@@ -77,13 +76,11 @@ export const TransactionsProvider = ({ children }) => {
 
         transactionsContract
           .createTask(title, description)
-          .then((response) => {
-            console.log("This is respose", response);
+          .then(() => {
             setTransactions([...transactions, data]);
-            console.log("Completed Task");
           })
           .catch((err) => {
-            console.log("Error occured while adding a new task", err);
+            console.log(err);
           })
           .finally(() => {
             setTransactionLoading(false);
@@ -133,7 +130,7 @@ export const TransactionsProvider = ({ children }) => {
     checkIfWalletIsConnected();
     getAllTransactions();
     // eslint-disable-next-line
-  }, [transactions]);
+  }, []);
 
   return (
     <TransactionContext.Provider
