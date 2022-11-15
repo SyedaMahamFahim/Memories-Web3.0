@@ -15,8 +15,8 @@ contract Todo{
     // Add _ to the variable name to indicate that it is a private variable
 
 // /**
-//  * @title Twitter Contract
-//  * @dev Store & retrieve value in a variable
+//  * @title My Memories
+//  * 
 //  */
 
     event TaskCreated(address recipient, uint taskId);
